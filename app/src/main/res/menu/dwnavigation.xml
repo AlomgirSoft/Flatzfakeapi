@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/round_home_24"
+        android:checkable="true"
+
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/round_self_improvement_24"
+        android:checkable="true"
+        />
+    <item
+        android:id="@+id/share"
+        android:title="Shear"
+        android:icon="@drawable/round_share_24"
+        android:checkable="true"
+        />
+    <item
+        android:id="@+id/createProduct"
+        android:title="CreateProduct"
+        android:icon="@drawable/baseline_post_add_24"
+        android:checkable="true"
+        />
+</menu>

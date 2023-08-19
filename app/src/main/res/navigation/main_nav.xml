@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.platz_api_login_rejister.Views.Fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_deshBoradFragment"
+            app:destination="@id/deshBoradFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.platz_api_login_rejister.Views.Fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deshBoradFragment"
+        android:name="com.example.platz_api_login_rejister.Views.DeshboradFragment.DeshBoradFragment"
+        android:label="fragment_desh_borad"
+        tools:layout="@layout/fragment_desh_borad" >
+        <action
+            android:id="@+id/action_deshBoradFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+        <action
+            android:id="@+id/action_deshBoradFragment_to_imageUploadFragment"
+            app:destination="@id/imageUploadFragment" />
+        <action
+            android:id="@+id/action_deshBoradFragment_to_createProductFragment2"
+            app:destination="@id/createProductFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.example.platz_api_login_rejister.Views.DeshboradFragment.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" />
+    <fragment
+        android:id="@+id/imageUploadFragment"
+        android:name="com.example.platz_api_login_rejister.Views.DeshboradFragment.ImageUploadFragment"
+        android:label="fragment_image_upload"
+        tools:layout="@layout/fragment_image_upload" >
+        <action
+            android:id="@+id/action_imageUploadFragment_to_deshBoradFragment"
+            app:destination="@id/deshBoradFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createProductFragment2"
+        android:name="com.example.platz_api_login_rejister.Views.DeshboradFragment.UserUpdateFragment"
+        android:label="fragment_create_product"
+        tools:layout="@layout/user_update_fragment" />
+</navigation>
